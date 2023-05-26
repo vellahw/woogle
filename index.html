@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nanum+Gothic:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Boooogle</title>
+    <style>
+        h1 {
+            font-size: 5rem;
+            margin-left: 17%;
+            margin-top: 150px;
+            margin-bottom: 10px;
+            position: relative;
+            font-family: Josefin Sans;
+        }
+
+        h1 span:nth-child(1) {
+            color: #4184f4;
+        }
+
+        h1 span:nth-child(2) {
+            color: #ea4235;
+        }
+
+        h1 span:nth-child(3) {
+            color: #fabc08;
+        }
+
+        h1 span:nth-child(4) {
+            color: #4184f4;
+        }
+
+        h1 span:nth-child(5) {
+            color: #34a852;
+        }
+
+        h1 span:nth-child(6) {
+            color: #ea4235;
+        }
+
+        input {
+            margin-left: 6%;
+            margin-right: 6%;
+            padding-left: 10px;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 20px;
+            width: 80%;
+            height: 30px;
+            position: absolute;
+            box-shadow: .5px .5px .5px rgb(165, 163, 163);
+            font-weight: 200;
+        }
+
+        .bottom {
+            margin-top: 40px;
+            margin-left: 20%;
+            position: absolute;
+            width: 100%;
+        }
+
+        .bottom button {
+            padding: 6px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        .bottom button:nth-child(1) {
+            margin-left: 0;
+            position: relative;
+            margin-right: 2%;
+            width: 90px;
+            padding: 6px;
+        }
+
+        .bottom button:nth-child(2) {
+            margin-left: 0;
+            position: relative;
+            margin-right: 2%;
+            width: 90px;
+            padding: 6px;
+            width: 130px;
+
+        }
+
+        /*mobile first*/
+        ​ @media(min-width: 768px) and (max-width:1024px) {
+            h1 {
+                font-size: 6rem;
+                margin-left: 30%;
+                margin-top: 200px;
+                margin-bottom: 0;
+                position: relative;
+            }
+
+            input {
+                margin-left: 8%;
+                margin-right: 25% padding: 5px;
+                border: 2px solid lightgray;
+                border-radius: 8px;
+                width: 70%;
+                height: 2.5vh;
+                position: absolute;
+            }
+
+            .bottom {
+                margin-top: 60px;
+                margin-left: 30%;
+                display: flex;
+                position: absolute;
+                width: 150px;
+                ​
+            }
+
+            .bottom button {
+                padding: 8px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                position: absolute;
+                margin-left: 150px;
+                width: 125px;
+            }
+
+            .bottom button:nth-child(1) {
+                margin-left: 10;
+                position: absolute;
+                width: 90px;
+                margin-right: 50px;
+            }
+
+            .bottom button:nth-child(2) {
+                margin-left: 65%;
+                position: absolute;
+                width: 150px;
+                margin-right: 50px;
+
+            }
+        }
+
+        ​ @media all and(min-width:1025) {
+            * {
+                margin: 0;
+                padding: 0;
+                width: 1300px;
+                height: 1000px;
+                position: relative;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+
+            h1 {
+                font-size: 6rem;
+                margin-left: 30%;
+                margin-top: 20%;
+                margin-bottom: 700px;
+                position: relative;
+            }
+
+            input {
+                margin-left: 20%;
+                margin-right: 25%;
+                padding: 5px;
+                border: 2px solid lightgray;
+                border-radius: 8px;
+                width: 10%;
+                height: 20px;
+                color: lightslategray;
+            }
+
+            .bottom {
+                margin-top: 20px;
+                margin-left: 20%;
+            }
+
+            .bottom button {
+                padding: 8px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+            }
+
+            .bottom button:nth-child(1) {
+                margin-left: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logo -->
+    <h1>
+        <span>B</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+    <form name="sfrom" action="https://google.com/search" method="get">
+        <!-- input -->
+        <input type="text" name="q" autofocus="on" placeholder="Boogle 검색 또는 URL 입력" />
+        <!-- button -->
+        <div class="bottom">
+            <button type="submit">부글 검색</button>
+            <button type="button" onclick="window.open('http://www.naver.com')">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Nanum+Gothic:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Boooogle</title>
+    <style>
+        h1 {
+            font-size: 5rem;
+            margin-left: 17%;
+            margin-top: 150px;
+            margin-bottom: 10px;
+            position: relative;
+            font-family: Josefin Sans;
+        }
+
+        h1 span:nth-child(1) {
+            color: #4184f4;
+        }
+
+        h1 span:nth-child(2) {
+            color: #ea4235;
+        }
+
+        h1 span:nth-child(3) {
+            color: #fabc08;
+        }
+
+        h1 span:nth-child(4) {
+            color: #4184f4;
+        }
+
+        h1 span:nth-child(5) {
+            color: #34a852;
+        }
+
+        h1 span:nth-child(6) {
+            color: #ea4235;
+        }
+
+        input {
+            margin-left: 6%;
+            margin-right: 6%;
+            padding-left: 10px;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 20px;
+            width: 80%;
+            height: 30px;
+            position: absolute;
+            box-shadow: .5px .5px .5px rgb(165, 163, 163);
+            font-weight: 200;
+        }
+
+        .bottom {
+            margin-top: 40px;
+            margin-left: 20%;
+            position: absolute;
+            width: 100%;
+        }
+
+        .bottom button {
+            padding: 6px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        .bottom button:nth-child(1) {
+            margin-left: 0;
+            position: relative;
+            margin-right: 2%;
+            width: 90px;
+            padding: 6px;
+        }
+
+        .bottom button:nth-child(2) {
+            margin-left: 0;
+            position: relative;
+            margin-right: 2%;
+            width: 90px;
+            padding: 6px;
+            width: 130px;
+
+        }
+
+        /*mobile first*/
+        ​ @media(min-width: 768px) and (max-width:1024px) {
+            h1 {
+                font-size: 6rem;
+                margin-left: 30%;
+                margin-top: 200px;
+                margin-bottom: 0;
+                position: relative;
+            }
+
+            input {
+                margin-left: 8%;
+                margin-right: 25% padding: 5px;
+                border: 2px solid lightgray;
+                border-radius: 8px;
+                width: 70%;
+                height: 2.5vh;
+                position: absolute;
+            }
+
+            .bottom {
+                margin-top: 60px;
+                margin-left: 30%;
+                display: flex;
+                position: absolute;
+                width: 150px;
+                ​
+            }
+
+            .bottom button {
+                padding: 8px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                position: absolute;
+                margin-left: 150px;
+                width: 125px;
+            }
+
+            .bottom button:nth-child(1) {
+                margin-left: 10;
+                position: absolute;
+                width: 90px;
+                margin-right: 50px;
+            }
+
+            .bottom button:nth-child(2) {
+                margin-left: 65%;
+                position: absolute;
+                width: 150px;
+                margin-right: 50px;
+
+            }
+        }
+
+        ​ @media all and(min-width:1025) {
+            * {
+                margin: 0;
+                padding: 0;
+                width: 1300px;
+                height: 1000px;
+                position: relative;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+
+            h1 {
+                font-size: 6rem;
+                margin-left: 30%;
+                margin-top: 20%;
+                margin-bottom: 700px;
+                position: relative;
+            }
+
+            input {
+                margin-left: 20%;
+                margin-right: 25%;
+                padding: 5px;
+                border: 2px solid lightgray;
+                border-radius: 8px;
+                width: 10%;
+                height: 20px;
+                color: lightslategray;
+            }
+
+            .bottom {
+                margin-top: 20px;
+                margin-left: 20%;
+            }
+
+            .bottom button {
+                padding: 8px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+            }
+
+            .bottom button:nth-child(1) {
+                margin-left: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logo -->
+    <h1>
+        <span>B</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </h1>
+    <form name="sfrom" action="https://google.com/search" method="get">
+        <!-- input -->
+        <input type="text" name="q" autofocus="on" placeholder="Boogle 검색 또는 URL 입력" />
+        <!-- button -->
+        <div class="bottom">
+            <button type="submit">부글 검색</button>
+            <button type="button" onclick="window.open('http://www.naver.com')">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</body>
+
+</html>
